@@ -6,10 +6,10 @@ public class Pelicula {
     private String titulo;
     private String genero;
     private String autor;
-    private String copias;
-    private String novedad;
+    private int copias;
+    private boolean novedad;
 
-    public Pelicula(int id, String titulo, String genero, String autor, String copias, String novedad) {
+    public Pelicula(int id, String titulo, String genero, String autor, int copias, boolean novedad) {
         this.id = id;
         this.titulo = titulo;
         this.genero = genero;
@@ -50,19 +50,19 @@ public class Pelicula {
         this.autor = autor;
     }
 
-    public String getCopias() {
+    public int getCopias() {
         return copias;
     }
 
-    public void setCopias(String copias) {
+    public void setCopias(int copias) {
         this.copias = copias;
     }
 
-    public String getNovedad() {
+    public boolean getNovedad() {
         return novedad;
     }
 
-    public void setNovedad(String novedad) {
+    public void setNovedad(boolean novedad) {
         this.novedad = novedad;
     }
 
